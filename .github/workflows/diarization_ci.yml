@@ -1,0 +1,23 @@
+name: Diarization App CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/apps/diarization/**"
+      - ".github/workflows/diarization_ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "backend/apps/diarization/**"
+      - ".github/workflows/diarization_ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  diarization-ci:
+    name: 🗣️ Diarization App Placeholder
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Diarization CI Placeholder - To be implemented"

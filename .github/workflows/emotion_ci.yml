@@ -1,0 +1,23 @@
+name: Emotion App CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/apps/emotion/**"
+      - ".github/workflows/emotion_ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "backend/apps/emotion/**"
+      - ".github/workflows/emotion_ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  emotion-ci:
+    name: 😐 Emotion App Placeholder
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Emotion CI Placeholder - To be implemented"
